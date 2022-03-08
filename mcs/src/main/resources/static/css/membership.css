@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+* {
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+  border : 0px solid red;
+  font-size : 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+body {
+font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1rem;
+  letter-spacing: 0.1px;
+}
+
+img {
+  width : 180px;
+}
+
+h1, h2, h3 {
+font-family: 'Noto Sans KR', sans-serif;
+  font-weight : 300;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 5.5rem;
+  text-transform: uppercase;
+  color : #222;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+  margin-bottom : 25px;
+  color : #333;
+}
+
+h3 {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  margin-bottom : 12px;
+  color : #444;
+}
+
+h4, h5 {
+font-family: 'Noto Sans KR', sans-serif;
+}
+
+h4 {
+    font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+h5 {
+    font-size: 0.9rem;
+  line-height: 2.8rem;
+}
+
+a {
+font-family: 'Noto Sans KR', sans-serif;
+}
+
+a:link { color: #fff; text-decoration: none;}
+a:visited { color: #fff;}
+a:hover { color: #fff;}
+a:active { color: #fff;}
+
+.custom-btn {
+  width: 150px;
+  height : 40px;
+  color: #000;
+  padding: 15px 25px 20px 25px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-transform : uppercase;
+}
+
+.btn-15 {
+  background: #fff;
+   border : 1px solid #ccc;
+  z-index: 1;
+   padding : 0 40px;
+}
+
+.btn-15:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+.btn-15:hover {
+  color: #fff;
+  font-weight : 300;
+}
+.btn-15:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn-15:active {
+  top: 2px;
+}
+
+.btn-16 {
+  background: #333;
+   border : 1px solid #ccc;
+  z-index: 1;
+  color : #fff;
+  padding : 0 40px;
+}
+
+.btn-16:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  color : #333;
+}
+.btn-16:hover {
+  color: #333;
+  font-weight : 600;
+}
+.btn-16:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn-16:active {
+  top: 2px;
+}
+
+.solid {
+    font-size : 3.5rem;
+  color : #333;
+}
+
+a.top {
+  position: fixed;
+  left: 90%;
+  bottom: 35px;
+  display: none;
+  text-align : center;
+  font-size: 0.9rem;
+  color: #333;
+  z-index: 99;
+  background: rgba(255,255,255,0.8);
+  padding: 7px 13px;
+  border-radius : 90px;
+  border : 1px solid #999;
+  width : 55px;
+  height : 55px;
+  text-transform : uppercase;
+}
+
+
+
+nav {
+  width : 1000px;
+  margin : 0 auto;  
+}
+  
+nav > .zeta-menu-bar {
+  width : 1000px;
+ }
+  
+
+
+.hello {
+  width : 1200px;
+  margin : 50px auto 150px auto;
+  text-align : center;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.hello > h1 {
+  text-align : center;
+  padding : 10px 0 40px 0;
+  border-bottom : 1px solid #333;
+  font-size: 64px;
+  line-height: 90px;
+  text-transform: uppercase;
+  color : #222;
+  font-weight : 300;
+  margin-bottom : 100px;
+}
+
+.hello ul {
+  margin : 0 auto;
+  width : 385px;
+  text-align : center;
+}
+
+.hello ul li {
+  margin : 0 5px;
+}
+
+.hello ul li a {
+  color : #d00b17;
+  background : #fff;
+    border-radius : 0px;
+  font-weight : 400;
+}
+
+.hello ul li a:hover {
+  color : #d00b17;
+  border : 1px solid #ccc;
+  background : none;
+}
+
+.tab-content .btn {
+  padding : 10px 40px;
+  border-radius : 0px;
+  background : #333;
+  margin : 30px 0;
+  border : 1px solid #ccc;
+  transition : 0.4s;
+  
+}
+
+.tab-content .btn:hover,
+.tab-content .btn:active,
+.tab-content .btn:hover:active{
+  color : #333;
+  background : #fff;
+  border : 1px solid #ccc;
+  
+}
+
+.tab-content {
+   border-bottom : 1px solid #333;
+  padding-bottom : 20px;
+}
+
+.tab-content #tab1 {
+  padding : 70px 0 100px 0;
+}
+
+.tab-content #tab1 h2 {
+  margin : 30px 0;
+}
+
+.tab-content #tab1 h4 {
+  line-height : 30px;
+}
+
+.tab-content #tab1 p {
+  font-size : 14px;
+  margin-top : -15px;
+}
+
+.tab-content #tab2  {
+  padding : 70px 0 100px 0;
+}
+
+.tab-content #tab2 form {
+  padding : 50px;
+  margin : 0 auto;
+  width : 600px;
+}
+
+.tab-content #tab2 form small {
+  padding : 0 15px;
+  color :  #d00b17;
+  cursor : pointer;
+}
+
+.tab-content #tab2 form h5 {
+text-align : left;
+  padding : 20px 0;
+  font-size : 16px;
+  font-weight : 500;
+}
+
+.tab-content #tab2 form span{
+  display : block;
+  text-align : left;
+}
+
+.tab-content #tab2 form label {
+  font-size : 14px;
+  font-weight : 400;
+  padding : 3px 0;
+}
+
+.tab-content #tab2 form p {
+  display : inline;
+  margin-left : 10px;
+}
+
+.tab-content #tab2 form .red1 {
+  font-size : 12px;
+  text-align : left;
+  padding : 5px;
+  color :  #d00b17;
+}
+
+
+.tab-content #tab3  {
+  padding : 20px 0 100px 0;
+}
+
+.tab-content #tab3 form {
+  width : 450px;
+  margin : 0 auto;
+  padding : 50px 0;
+}
+
+.tab-content #tab3 form span{
+  display : block;
+  text-align : left;
+  margin : 10px 0;
+}
+ 
+
+.tab-content #tab3 form label {
+  font-size : 14px;
+  font-weight : 400;
+  padding : 10px 5px;
+  display : table-cell;
+}
+
+.tab-content #tab3 form input {
+  font-weight : 300;
+  font-size : 13px;
+  height : 50px;
+  background : #fff;
+  border : 1px solid #999;
+  padding-left : 15px;
+  width : 450px;
+}
+
+.tab-content #tab3 .birth input {
+  width : 330px;
+}
+
+.tab-content #tab4 {
+  padding : 70px 0 120px 0;
+}
+
+.tab-content #tab4 h2 {
+  margin : 30px 0;
+}
+
+.tab-content #tab4 h4 {
+  line-height : 30px;
+}
+
+.tab-content .btn-16 {
+  height : 42px;
+  margin-top : 20px;
+  font-weight : 400;
+}
+

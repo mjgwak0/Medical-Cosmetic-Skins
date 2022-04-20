@@ -1,0 +1,1771 @@
+/*  폰트 적용 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+    'Noto Sans Korean', 'NotoSansKR-Regular', sans-serifsans-serif;
+}
+
+/* 노말라이즈 */
+body, ul, li {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+a {
+    color:inherit;
+    text-decoration:none;
+}
+
+/*상단 슬라이드 */
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+
+
+
+/* 라이브러리 */
+.con {
+    margin:0 auto;
+}
+
+.img-box > img {
+    width:100%;
+    display:block;
+}
+
+.row::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.cell {
+    float:left;
+    box-sizing:border-box;
+}
+
+.cell-right {
+    float:right;
+    box-sizing:border-box;
+}
+
+.margin-0-auto {
+    margin:0 auto;
+}
+
+.block {
+    display:block;
+}
+
+.inline-block {
+    display:inline-block;
+}
+
+.text-align-center {
+    text-align:center;
+}
+
+.line-height-0-ch-only {
+    line-height:0;
+}
+
+.line-height-0-ch-only > * {
+    line-height:normal;
+}
+
+.relative {
+    position:relative;
+}
+
+.absolute-left {
+    position:absolute;
+    left:0;
+}
+
+.absolute-right {
+    position:absolute;
+    right:0;
+}
+
+.absolute-middle {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+/* 커스텀 */
+.top-banner{
+    background-color : #69d5d8;
+
+    height : 110px;
+    text-align : center;
+}
+.top-banner > span > a::after{
+    content : "";
+    float: right;
+    border: 1px solid #4b221c;
+    margin-left : 7px;
+    border-radius : 50%;
+    width: 13px;
+    height: 13px;
+    display :inline-block;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/arr_right12.png) 50% 50% no-repeat;
+}
+.top-banner > span > a{
+    vertical-align: middle;
+    display : inline-block;
+    padding : 0;
+    font-size : 13px;
+    color: #4b221c;
+}
+.top-banner > span{
+    box-sizing : border-box;
+    font-weight : bold;
+    width : 890px;
+    height : 110px;
+    display : inline-block;
+    padding-left : 330px;
+    text-align : left;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/img_main_banner.png) 0 0 no-repeat;
+}
+.top-banner > span > .txt{
+    font-size :22px;
+    display : block;
+    padding: 30px 0 8px 0;
+    color: #4b221c;
+}
+.top-bar{
+    height : 110px;
+}
+.top-bar .logo{
+    float : left;
+    margin-top : 17px;
+    margin-right : 70px;
+    cursor : pointer;
+}
+
+.top-bar .search-box{
+    display : inline-block;
+    position :relative;
+    cursor : pointer;
+    padding: 23px 0;
+}
+.top-bar input{
+    border : 1px solid lightgrey;
+    border-radius : 30px;
+    font-size:20px;
+    padding:17px;
+    padding-right : 178px;
+    outline:0;
+}
+.top-bar .search-box input ~ .sub {
+    display:none;
+    position:absolute;
+}
+.top-bar .search-box input:focus ~ .sub {
+    display:block;
+}
+.top-bar .sub{
+    margin-top : 10px;
+    background-color : white;
+    border: 1px solid #000;
+    z-index : 2;
+}
+.top-bar .populer > .h1{
+    white-space : nowrap;
+    font-size : 25px;
+    font-weight : bold;
+    border-bottom : 1px solid #d2d2d2;
+    padding-right : 250px;
+    padding-bottom : 15px;
+    margin : 15px 30px 20px 30px;
+}
+.top-bar .populer > ul{
+    margin : 0 30px 25px 30px;
+    font-size : 15px;
+    letter-spacing : -2px;
+    color : 
+}
+.top-bar .populer > ul > li{
+    width : 50%;
+    padding : 5px 0;
+}
+.top-bar .color > .h2{
+    white-space : nowrap;
+    font-size : 25px;
+    font-weight : bold;
+    border-bottom : 1px solid #d2d2d2;
+    padding-right : 200px;
+    padding-bottom : 15px;
+    margin : 15px 30px 20px 30px;
+}
+.top-bar .color > span > div{
+    margin : 0 0 20px 30px;
+}
+.top-bar .color > span > .pink{
+    width : 50px;
+    height : 50px;
+    background-color : #f06da1;
+    border-radius : 10px;
+    box-shadow: 0 5px 10px 0 #e7e7e7;
+}
+.top-bar .color > span > .red{
+    width : 50px;
+    height : 50px;
+    background-color : #e9224e;
+    border-radius : 10px;
+    box-shadow: 0 5px 10px 0 #e7e7e7;
+}
+.top-bar .color > span > .orange{
+    width : 50px;
+    height : 50px;
+    background-color : #ff7a2d;
+    border-radius : 10px;
+    box-shadow: 0 5px 10px 0 #e7e7e7;
+}
+.top-bar .color > span > .violet{
+    width : 50px;
+    height : 50px;
+    background-color : #b261e4;
+    border-radius : 10px;
+    box-shadow: 0 5px 10px 0 #e7e7e7;
+}
+.top-bar .color > span > .black{
+    width : 50px;
+    height : 50px;
+    background-color : black;
+    border-radius : 10px;
+    box-shadow: 0 5px 10px 0 #e7e7e7;
+}
+.top-bar .color > span > .brown{
+    width : 50px;
+    height : 50px;
+    background-color : #8e502f;
+    border-radius : 10px;
+    box-shadow: 0 5px 10px 0 #e7e7e7;
+}
+.top-bar .color > span > .green{
+    width : 50px;
+    height : 50px;
+    background-color : #8fe48a;
+    border-radius : 10px;
+    box-shadow: 0 5px 10px 0 #e7e7e7;
+}
+.top-bar .color > span > .blue{
+    width : 50px;
+    height : 50px;
+    background-color : #3a6abf;
+    border-radius : 10px;
+    box-shadow: 0 5px 10px 0 #e7e7e7;   
+}
+.top-bar .color > span > .yellow{
+    width : 50px;
+    height : 50px;
+    background-color : #f9c361;
+    border-radius : 10px;
+    box-shadow: 0 5px 10px 0 #e7e7e7;
+}
+.top-bar .color > span > .white{
+    width : 50px;
+    height : 50px;
+    background-color : #fff;
+    border-radius : 10px;
+    box-shadow: 0 5px 10px 0 #e7e7e7;
+    margin-bottom : 30px;
+}
+.top-bar .search-box > .btn_search::after{
+    position : absolute;
+    top : 50%;
+    left :90%;
+    transform : translateY(-50%) translateX(-50%);
+    content : "";
+    width: 25px;
+    height: 25px;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/ico.png) no-repeat -80px 0;
+}
+.top-bar .menu{
+    margin-top : 35px;
+}
+.top-bar .menu > li:not(:first-child){
+    margin-left : 35px;
+}
+.top-bar .menu > li > a{
+    font-size : 12px;
+    letter-spacing : -2px;
+    font-weight : bold;
+    color : #afafaf;
+}
+.top-bar .menu > li > .login::before{
+    content : "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin : 0 auto;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/ico_header.png) no-repeat
+}
+.top-bar .menu > li > .join::before{
+    content : "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin : 0 auto;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/ico_header.png) no-repeat 0px -20px;
+}
+.top-bar .menu > li > .order::before{
+    content : "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin : 0 auto;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/ico_header.png) no-repeat 0px -40px;
+}
+.top-bar .menu > li > .bucket::before{
+    content : "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin : 0 auto;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/ico_header.png) no-repeat 0px -60px;
+}
+.top-bar .menu > li > .history::before{
+    content : "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin : 0 auto;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/ico_header.png) no-repeat 0px -80px;
+}
+.top-menu-bar{
+    border-top : 1px solid #ebebeb;
+    position : relative;
+}
+.top-menu-bar .btn-category{
+    cursor : pointer;
+    display : block;
+    padding : 15px 0;
+    background-color : white;
+    border : 0;
+    font-weight : bold;
+    font-size : 16px;
+}
+.top-menu-bar .btn-category::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/ico_header.png) no-repeat 0 -140px;
+    vertical-align: middle;
+}
+.top-menu-bar .menu-1 .sub-menu-part {
+    top : 99%;
+    position: absolute;
+    height: 0;
+    transition: height 0.5s;
+    transform: translateY(1px);
+    overflow: hidden;
+}
+.sub-menu-base-con{
+    height : 389px;
+    background-color: #f54a7e;
+}
+.top-menu-bar .menu-1 .sub-menu-bg {
+    left: 0;
+    width: 100%;
+    background-color : white;
+}
+.top-menu-bar .menu-1 .sub-menu-base.sub-menu-base-width-100-percent {
+    border-top: 1px solid #d2d2d2;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+    left: 0;
+    width: 100%;
+}
+.top-menu-bar .menu-1 > li.sub-menu-height-389 > .sub-menu-part.active {
+    height: 389px;
+    z-index  :99;
+}
+.top-menu-bar .menu-1 .menu-1-1 > li:first-child {
+    width : 465px;
+}
+.top-menu-bar .menu-1 .menu-1-1 .menu-1-1-1 {
+    width: 155px;
+    position: relative;
+}
+
+.top-menu-bar .menu-1 .menu-1-1 .menu-1-1-1 > .on > a::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 30px;
+    height: 20px;
+    margin-top: -10px;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/bg_category_on.png) no-repeat;
+}
+.top-menu-bar .menu-1 .menu-1-1 .menu-1-1-1 > .on > a{
+    opacity : 1;
+}
+.top-menu-bar .menu-1 .menu-1-1 .menu-1-1-1 > li > a {
+    position : relative;
+    display : block;
+    width: 155px;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 48px;
+    color: #fff;
+    opacity: .5;
+}
+.top-menu-bar .menu-1 .menu-1-1 .menu-1-1-1 > li > .on-1 { 
+    margin-top : 14px;
+}
+.top-menu-bar .menu-1 .menu-1-1 .menu-1-1-1 .side-menu {
+    padding : 20px 0;
+    background-color : white;
+    width : 310px;
+    height : 389px;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    display : none;
+}
+.top-menu-bar .menu-1 .menu-1-1 .menu-1-1-1 > li.on > ul {
+    display: block;
+}
+.top-menu-bar .menu-1 .menu-1-1 .menu-1-1-1 ul > .on > a{
+    color : #f54a7e;
+}
+.top-menu-bar .menu-1 .menu-1-1 .menu-1-1-1 ul > li > a {
+    font-weight : 700;  
+    display: block;
+    padding: 0 20px 0 40px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #666;
+}
+.top-menu-bar .cell > a{
+    padding : 15px 22px;
+    font-size : 16px;
+    display : block;
+    font-weight : bold;
+}
+.top-menu-bar .banner{
+    display : none;
+}
+.top-menu-bar .banner-2{
+    display : none;
+}
+.top-menu-bar .on .banner {
+    position : absolute;
+    display : block;
+    top : 0;
+    right :  -620px;
+}
+.top-menu-bar .on .banner-2 {
+    display : block;
+    position : absolute;
+    top : 0;
+    right :  -1045px;
+}
+.top-menu-bar .banner-3{
+    display : none;
+}
+.top-menu-bar .banner-4{
+    display : none;
+}
+.top-menu-bar .on .banner-3 {
+    position : absolute;
+    display : block;
+    top : 0;
+    right :  -620px;
+}
+.top-menu-bar .on .banner-4 {
+    display : block;
+    position : absolute;
+    top : 0;
+    right :  -1045px;
+    width : 425px !important;
+    height : 389px !important;;
+}
+
+.top-menu-bar .carousel-3 .item {
+    width : 425px !important;
+    height : 389px !important;;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    z-index : 9999;
+}
+
+.top-menu-bar .carousel-3 .owl-nav {
+    margin:0 !important;
+}
+
+.top-menu-bar .carousel-3 .owl-nav > div {
+    display : none !important;
+    padding:0 !important;
+    margin:0 20px !important;
+    border-radius:0 !important;
+    background-color:transparent !important;
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    font-size:4rem !important;
+}
+
+.top-menu-bar .carousel-3 .owl-nav > div.owl-next {
+    left:auto;
+    right:0;
+}
+
+.top-menu-bar .carousel-3 .owl-dots {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+
+.top-menu-bar .carousel-3 .owl-dots {
+    line-height:0 !important;
+    padding:10px 0 !important;
+}
+
+.top-menu-bar .carousel-3 .owl-dots > .owl-dot > span {
+    width:10px !important;
+    height:10px  !important;
+    border-radius:50%  !important;
+    margin:0 3px !important;
+}
+.weekly-best{
+    border-left : 1px solid #ebebeb;
+}
+.weekly-best .dd{
+    font-size : 14px;
+    font-weight : bold;
+    padding : 15px 35px;
+    color : rgb(136, 136, 136);
+    letter-spacing : -1px;
+}
+.weekly-best .dt::before{
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 20px;
+    margin-right: 5px;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/ico_header.png) no-repeat 0 -120px;
+    vertical-align: middle;
+}
+
+.top-menu-bar .weekly-best .dt {
+    float: left;
+    width: 95px;
+    padding-left: 27px;
+    font-size: 14px;
+    color: #888;
+    line-height: 48px;
+    letter-spacing : -2px;
+}
+.dd {
+    display: block;
+}
+.top-menu-bar .weekly-best .dd{
+    width : 180px;
+    float : left;
+    padding : 0 0 0 0;
+    letter-spacing : -2px;
+}
+.slide{
+    position : relative;
+    width : 100%;
+    margin-bottom : -
+}
+.top-menu-bar .weekly-best .ix-list-viewport {
+    height: 48px;
+}
+.slide .ix-list-item {
+    display : none;
+}
+.slide .active {
+    display : block;
+}
+.slide .ix-list-items {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.slide .ix-list-item {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.top-menu-bar .weekly-best .ix-list-item a {
+    line-height: 48px;
+    font-size: 14px;
+}
+.slide .ix-list-item > a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.top-menu-bar .weekly-best .num {
+    padding: 1px 5px 0 0;
+}
+strong {
+    color: #333;
+    font-weight: 700;
+}
+.top-menu-bar .weekly-best .title {
+    width: 170px;
+    padding: 0;
+    color: #999;
+
+}
+.slide a.title {
+    padding-top: 1em;
+    color: #000;
+    text-align: left;
+}
+.top-menu-bar .weekly-best .ix-list-item a::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.slider .carousel-1 .item {
+    height:500px;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+
+.slider .carousel-1 .owl-nav {
+    margin:0 !important;
+    position : relative;
+    z-index : 999 !important;
+}
+.slider .carousel-1 .owl-nav > div:hover{
+    background-color : #fff !important;
+}
+.slider .carousel-1 .owl-nav > div {
+    padding: 5px 20px !important;
+    margin:0 10px !important;
+    color : #666 !important;
+    position:absolute;
+    top:100%;
+    left:calc(50% - 70px);
+    transform:translateY(-50%);
+    font-size:1rem !important;
+    z-index : 9999;
+}
+
+.slider .carousel-1 .owl-dots{
+    display : none;
+}
+.slider .carousel-1 {
+    position : relative;
+}
+.slider .carousel-1 .control-box{
+    text-align : center;
+    position: absolute;
+    left: 50%;
+    bottom: -16.4px;
+    width: 54px;
+    height: 30.4px;
+    transform : translateX(-50%);
+    z-index : 2;
+    background-color : #fff;
+    border-top : 1px solid #ebebeb;
+    border-bottom : 1px solid #ebebeb;
+}
+.slider .carousel-1 .control-box .prev{
+    top : 0px;
+    position : absolute;
+    left : 14px;
+    display : inline-block;
+    width: 28px;
+    height: 26px;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/main/btn_slide_navi.gif) no-repeat -1px -1px;
+    border: 0 !important;
+    z-index : 99;
+    cursor:  pointer;
+}
+.slider .carousel-1 .owl-nav > div.owl-prev{
+    display : none;
+    background-color : #fff;
+    border-top: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 18px;
+}
+.slider .carousel-1 .owl-nav > div.owl-next {
+    display : none;
+    left:auto;
+    right:calc(50% - 70px);
+    background-color : #fff;
+    border-top: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 18px;
+}
+.slider .carousel-1 {
+    position : relative;
+}
+.slider .carousel-1 .control-box{
+    text-align : center;
+    position: absolute;
+    left: 50%;
+    bottom: -16.4px;
+    border-radius : 20px;
+    width: 120px;
+    height: 32px;
+    transform : translateX(-50%);
+    z-index : 2;
+    background-color : #fff;
+    border-top : 1px solid #ebebeb;
+    border-bottom : 1px solid #ebebeb;
+}
+
+.slider .carousel-1 .control-box .next{
+    top : 1px;
+    right : 14px;
+    position : absolute;
+    display : inline-block;
+    width: 28px;
+    height: 26px;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/main/btn_slide_navi.gif) no-repeat -1px -1px;
+    border: 0 !important;
+    z-index : 99;
+    cursor:  pointer;
+    background-position: -31px -1px !important;
+
+}
+.slider .carousel-1 .control-box > ul{
+    position: static;
+    display: block;
+    text-align: center;
+    color: #666;
+    line-height: 33px;
+    font-size: 14px;
+    font-weight : bold;
+}
+.slider .carousel-1 .control-box > ul > li > .current-no{
+    color : black;
+}
+.menu-box{
+    margin-bottom : 80px;
+    position : relative;
+}
+.menu-box .title{
+    margin-top : 50px;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: 300;
+    color: #000;
+}
+.more{
+    top : 5px;
+    right : 30px;
+    position : absolute;
+    font-size: 16px;
+    color: #000;
+    font-weight : bold;
+}
+.more::after{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 15px;
+    margin: -3px 0 0 9px;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/ico.png) no-repeat -65px -55px;
+    vertical-align: middle;
+}
+.menu-box .title:before {
+    content: "";
+    display: inline-block;
+    width : 40px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: -4px;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/main/ico_main_title.png) no-repeat;
+    vertical-align: middle;
+}
+.menu-box .menu{
+    text-align : left;
+}
+.menu-box .cell{
+    width: 270px;
+    margin-left: 0px;
+    margin-right: 30px;
+
+}
+.menu-box .cell > img{
+    background: #f5f5f5;
+    width : 100%;
+}
+.menu-box .name{
+    margin-top : 30px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-left : 10px;
+    height: 52px;
+}
+.menu-box .color{
+    font-size: 15px;
+    line-height: 40px;
+    margin-left : 10px;
+    height: 52px;
+    color : #888;
+    font-weight : bold;
+}
+.menu-box .cell > .price::after{
+    content : "원";
+    font-size: 16px;
+    color: #333;
+    font-weight : bold;
+}
+.menu-box .cell > .price{
+    margin-left : 10px;
+    font-size: 20px;
+    color: #333;
+    font-weight : bold;
+}
+.menu-box .cell:first-child > .price{
+    font-size: 20px;
+    color: #333;
+    margin-top : 52px;
+}
+.recommend_tag {
+    width: 50%;
+    height: 500px;
+}
+.clear .title{
+    padding-top : 60px;
+    padding-left : 40px;
+    margin-bottom: 30px;
+    font-size: 23px;
+    font-weight: 300;
+    color: #000;
+}
+.clear .title::before{
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: -4px;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/main/ico_main_title.png) no-repeat 0 -30px;
+    vertical-align: middle;
+}
+.clear .tag{
+    padding : 0px 40px;
+    margin: -10px -15px 0;
+}
+.clear .tag > a{
+    display : inline-block;
+    margin : 10px 15px;
+    line-height: 45px;
+    border-radius : 23px;
+    background-color : white;
+    font-size : 16px;
+    padding : 0 30px;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+}
+.section > a{
+    display: block;
+    height: 250px;
+    background: #000;
+}
+.recommend_tag + .section > a > img{
+    opacity: .7;
+    transition: .5s;
+}
+.recommend_tag + .section > a > img:hover{
+    opacity : .8;
+}
+.channel {
+    position : relative;
+    height : 471.89px;
+}
+.channel .title{
+    margin-top : 50px;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: 300;
+    color: #000;
+}
+.channel .title:before {
+    content: "";
+    display: inline-block;
+    width : 23px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: -4px;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/main/ico_main_title.png) no-repeat 0px -91px;
+    vertical-align: middle;
+}
+
+button {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+}
+.channel .clear .happy{
+    width: 425px;
+}
+.channel .clear .happy .font_xl{
+    font-size  : 17px;
+    letter-spacing : -2px;
+    color : #888;
+    font-weight : bold;
+}
+.channel li a {
+    display: table;
+    width: 100%;
+}
+.channel li {
+    padding-top: 8px;
+    margin-top: 3.5px;
+    position : relative;
+}
+.channel li a > * {
+    display: table-cell;
+    vertical-align: middle;
+}
+.channel li span + span {
+    padding-left: 40px;
+    text-align : left;
+}
+.channel li img{
+    width: 115px;
+    height: 115px;
+    background-color: #f5f5f5;
+    background-size: 50px;
+}
+.channel li + li{
+    border-top: 1px solid #ebebeb;
+}
+.channel .name{
+    padding-top : 10px;
+    display : inline-block;
+    letter-spacing : -2px;
+    display: block;
+    color: #000;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.3;
+    height: 1.3em;
+    overflow: hidden;
+}
+.channel .color{
+    display: block;
+    color: #888;
+    height: 16px;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 6px 0 10px 0;
+    font-weight : bold;
+}
+.channel .price{
+    display: block;
+    margin-top: 10px;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight : bold;
+}
+.channel .price::after{
+    content : "원";
+    font-size : 16px;
+    color : #888;
+}
+dd{
+    margin : 0;
+}
+
+.look {
+    position : relative;
+}
+.look .title::before{
+    content: "";
+    display: inline-block;
+    width : 23px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: -4px;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/main/ico_main_title.png) no-repeat 0px -120px;
+    vertical-align: middle;
+}
+.look .title{
+    margin-top : 50px;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: 300;
+    color: #000;
+}
+.look .cell{
+    margin-right : 32px;
+    width: 208px;
+}
+.look .image-box{
+    width: 208px;
+    height: 208px;
+}
+.info-box{
+    padding : 10px;
+}
+.look .info-box{
+    text-align : left;
+}
+.info-box .name{
+    font-size: 18px;
+    line-height: 26px;
+    height: 52px;
+    overflow: hidden;
+
+    word-break: break-all;
+    letter-spacing : -3px;
+}
+.info-box .item-option{
+    width: 100%;
+    line-height: 1.3;
+    height: 1.3em;
+    overflow: hidden;
+    letter-spacing : -1px;
+}
+.recommend_items .item-option {
+    position: static;
+    font-size: 16px;
+    letter-spacing: -1px;
+    margin: 15px 0;
+    color : #888;
+    font-weight : bold;
+}
+.info-box .option{
+    margin-bottom: 8px;    
+}
+.info-box .price::after{
+    content : "원";
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Noto Sans Korean';
+}
+.info-box .price-area{
+    margin-top : -10px;
+}
+.look .info-box .price{
+    font-size: 20px;
+    font-weight : bold;
+    color: #333;
+    display  :inline-block;
+}
+.best {
+    position : relative;
+}
+
+.best .title::before{
+    content: "";
+    display: inline-block;
+    width : 23px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: -4px;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/main/ico_main_title.png) no-repeat 0px -150px;
+    vertical-align: middle;
+}
+.best .title{
+    margin-top : 50px;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: 300;
+    color: #000;
+}
+.best .image-box{
+    width : 270px;
+    margin : 0 auto;
+}
+.best .info-box{
+    padding : 0;
+    text-align : center;
+    width : 300px;
+}
+.best .title-area{
+    padding : 0 15px;
+}
+.best .num{
+    display: block;
+    padding: 18px 0 10px 0;
+    font-size: 26px;
+    color: #000;
+    border-top: 1px solid #ebebeb;
+}
+.best .name{
+    letter-spacing : -1px;
+}
+.best .item-option{
+    line-height: 1.3;
+    height: 1.3em;
+    overflow: hidden;
+    color: #888;
+    margin: 15px 0;
+}
+.best .option{
+    letter-spacing : 0px;
+}
+.best .price{
+    display : inline-block;
+    font-size: 20px;
+    font-weight : bold;
+}
+.best .price::after{
+    font-weight : bold;
+}
+.best .my-1 .item > h4 {
+    margin:0;
+}
+.best .my-1 .owl-nav > .owl-prev, .my-1 .owl-nav > .owl-next {
+    position:absolute;
+    top:50%;
+    left:-10px;
+    transform:translateY(-50%);
+    padding : 8px 12px !important;
+    border-radius : 0 !important;
+    margin:0 !important;
+    font-weight : bold !important;
+    color : #888 !important;
+    background-color : #fff !important;
+    background-image: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/btn_slide_navi.png) !important;
+    background-repeat: no-repeat !important;
+    border : 1px solid #999 !important;
+}
+
+.best .my-1 .owl-nav > .owl-next {
+    left:auto;
+    right:-10px;
+    background-position: 100% 0 !important;
+}
+.best .my-1 .owl-dots {
+    display:none;
+}
+.best .discount{
+    display: inline-block;
+    float: none !important;
+    width: auto;
+    text-align: center;
+}
+.best .to{
+    font-size: 20px;
+    color: #f54a7e;
+}
+.best .to::after{
+    content : "%";
+    font-size : 16px;
+}
+.today .title{
+    margin-top : 50px;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: 300;
+    color: #000;
+}
+.today .title::before{
+    content: "";
+    display: inline-block;
+    width : 42px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: -4px;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/main/ico_main_title.png) no-repeat 0px -180px;
+    vertical-align: middle;
+}
+.today .hot-deal{
+    width : 580px;
+    position : relative;
+}
+.today .item_state{
+    z-index : 99;
+    position : absolute;
+    top: 50%;
+    left: 50%;
+    bottom: initial;
+    width: 70px;
+    height: 70px;
+    margin: -35px 0 0 -35px;
+    background: rgba(102, 102, 102, 0.6);
+    color: #fff;
+    border-radius: 50%;
+    line-height: 70px;
+}
+.today .img-box{
+    box-sizing : border-box;
+    position: relative;
+    width: 270px;
+    height: 300px;
+    padding-top: 45px;
+    background-color: #f5f5f5;
+}
+.today img{
+    z-index : 1;
+    position: absolute;    
+    top: 0;
+    left: 0;
+}
+.today .cell a{
+    position : relative;
+    display: block;
+    width: 240px;
+    height: 240px;
+    margin: 0 15px;
+}
+
+.today .my-1 .item > h4 {
+    margin:0;
+}
+
+.today .my-1 .owl-nav > .owl-prev, .my-1 .owl-nav > .owl-next {
+    position:absolute;
+    top:40%;
+    left:10px;
+    transform:translateY(-50%);
+    padding : 8px 12px !important;
+    border-radius : 0 !important;
+    margin:0 !important;
+    font-weight : bold !important;
+    color : #888 !important;
+    background-color : #fff !important;
+    background-image: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/btn_slide_navi.png) !important;
+    background-repeat: no-repeat !important;
+    border : 1px solid #999 !important;
+}
+
+.today .my-1 .owl-nav > .owl-next {
+    left:auto;
+    right:20px;
+    background-position: 100% 0 !important;
+}
+.today .my-1 .owl-dots {
+    display:none;
+}
+.today .info-box{
+    width : 270px;
+}
+.today .name{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height : 40px;
+    letter-spacing : -2.6px;
+}
+.today .info-box{
+    text-align : center;
+}
+.today .num{
+    color: #f54a7e;
+    border : none;
+    display: block;
+    font-size: 26px;
+}
+.today .title-area{
+    padding-top : 5px;
+    border-bottom: 1px solid #f5f5f5 !important;
+}
+.today .num::after{
+    content : '%';
+}
+.today .price-area .del{
+    display : inline-block;
+    color: #999;
+    font-size: 16px;
+    padding-right: 5px;
+}
+.today .price-area{
+    margin : 0;
+    text-align : left;
+}
+.today .price-area .price{
+    display : inline-block;
+    font-size: 20px;
+    color: #333;
+    font-weight : bold;
+}
+.today .price-area .price::after{
+    content : "원";
+}
+.today .price-area .del{
+    text-decoration: line-through;
+}
+.today .price-area .del::after{
+    content : "원";
+    color: #999;
+    font-size: 14px;
+    font-family: 'Noto Sans Korean';
+}
+.item-state{
+    position : absolute;
+    top : 15px;
+    bottom: auto;
+    width : 100%;
+    text-align : center;
+}
+.item-state .timer{
+    border : 1px solid #f54a7e;
+    background: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    border-radius: 25px;
+    vertical-align: top;
+    padding-right : 10px;
+}
+.item-state .timer::after{
+    content : "";
+    clear : both;
+    display: block;
+}
+.item-state .timer div{
+    display : inline-block;
+    letter-spacing : -1px;
+    line-height: 28px;
+    font-size: 14px;
+    font-weight : bold;
+    font-family: Arial;
+    float : left;
+}
+.item-state .timer > span {
+    padding: 6px 5px 0 5px;
+    float: left;
+    display: inline-block;
+    margin-right: 5px;
+}
+.item-state .timer span > span{
+    display : inline-block;
+    width: 18px;
+    height: 18px;
+    margin: -4px 0 0;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/ico.png) no-repeat 0 -90px;
+}
+.find{
+    display : none;
+    width : 580px;
+    position : relative;
+}
+.find .title{
+    position : relative;
+    margin-top : 50px;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: 300;
+    color: #000;
+}
+.find .title::before{
+    content: "";
+    display: inline-block;
+    width : 29px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: -4px;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/main/ico_main_title.png) no-repeat 0px -210px;
+    vertical-align: middle;
+}
+.carousel-2 .item {
+    height:600px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.carousel-2 .owl-nav {
+    margin:0 !important;
+    position : relative;
+    z-index : 999 !important;
+}
+.carousel-2 .owl-nav > div:hover{
+    background-color : #fff !important;
+}
+.carousel-2 .owl-nav > div {
+    padding: 5px 20px !important;
+    margin:0 10px !important;
+    color : #666 !important;
+    position:absolute;
+    top:100%;
+    left:calc(50% - 70px);
+    transform:translateY(-50%);
+    font-size:1rem !important;
+    z-index : 9999;
+}
+.carousel-2 .owl-nav > div.owl-prev{
+
+    background-color : #fff;
+    border-top: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 18px;
+}
+.carousel-2 .owl-nav > div.owl-next {
+    left:auto;
+    right:calc(50% - 70px);
+    background-color : #fff;
+    border-top: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 18px;
+}
+.carousel-2 .owl-dots{
+    display : none;
+}
+.carousel-2 {
+    position : relative;
+}
+.carousel-2 .control-box{
+    text-align : center;
+    position: absolute;
+    left: 50%;
+    bottom: -16.4px;
+    width: 54px;
+    height: 30.4px;
+    transform : translateX(-50%);
+    z-index : 2;
+    background-color : #fff;
+    border-top : 1px solid #ebebeb;
+    border-bottom : 1px solid #ebebeb;
+}
+.carousel-2 .control-box > ul{
+    position: static;
+    display: block;
+    text-align: center;
+    color: #666;
+    line-height: 33px;
+    font-size: 14px;
+    font-weight : bold;
+}
+.carousel-2 .control-box > ul > li > .current-no{
+    color : black;
+}
+.bottom{
+    margin-top : 80px;
+    padding-bottom: 30px;
+    background: #f5f5f5;
+    border-top: 1px solid #d2d2d2;
+    font-size: 13px;
+    color: #666;
+}
+.bottom-bar{
+    border-bottom: 1px solid #d2d2d2;
+}
+.bottom-bar .con{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+.bottom-bar .row{
+    padding : 10px 0;
+    height : 40px;
+}
+.bottom-bar a{
+    padding : 0 12px;
+    position : relative;
+    display : block;
+}
+.bottom-bar .cell:nth-child(2) a{
+    font-weight : bold;
+}
+.bottom-bar .cell:not(:last-child) > a::after{
+    position : absolute;
+    content : "";
+    width : 1px;
+    height : 12px;
+    background-color : #666;
+    transform : translateX(50%) translateY(30%);
+    margin-left : 12px;
+}
+.bottom-bar .family_site{
+    position: relative !important;
+    width: 270px;
+    max-height: inherit;
+}
+.bottom-bar button:hover{
+    border : 1px solid black;
+}
+.bottom-bar button{
+    cursor : pointer;
+    overflow: hidden;
+    width: 270px;
+    height: 40px;
+    padding: 0 35px 0 14px;
+    text-align: left;
+    background: #fff url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/bg_btn_select.png) no-repeat 100% 0;
+    border: 1px solid #d9d9d9;
+    color: #666;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    outline : 0;
+}
+.select_wrap.active > button{
+    border : 1px solid black;
+}
+.select_wrap.active > .select_options {
+    display:block;
+    border-top-width:0;
+}
+.bottom ul.select_options{
+    position: absolute;
+    z-index: 100;
+    overflow: auto;
+    display: none;
+    width: 268px;
+    max-height: 161px;
+    margin-top: -1px;
+    background: #fff;
+    border: 1px solid #333;
+    border-top-color: #e5e5e5;
+    overflow-x : hidden;
+}
+.bottom .select_option:first-child{
+    border-top : 1px solid #d9d9d9;
+}
+.bottom .select_options a:hover{
+    background-color : lightgray;
+}
+.bottom .select_options a{
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    text-align: left;
+}
+.bottom-box{
+    position : relative;
+    margin : 0 auto;
+}
+.bottom-box .sns-list{
+    margin : 30px 0 25px;
+}
+.bottom-box li{
+    display : inline;
+}
+.bottom-box li:not(:first-child) > a{
+    margin-left : 40px;
+}
+.bottom-box li:first-child > a{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/ico_footer_sns.png) no-repeat;
+}
+.bottom-box li:nth-child(2) > a{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/ico_footer_sns.png) no-repeat -26px 0;
+}
+.bottom-box li:nth-child(3) > a{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/ico_footer_sns.png) no-repeat -52px 0;
+}
+.bottom-box li:nth-child(4) > a{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/ico_footer_sns.png) no-repeat -78px 0;
+}
+.bottom-box li:last-child > a{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/ico_footer_sns.png) no-repeat -104px 0;
+}
+.company_info_wrap .cell{
+    width: 450px;
+}
+.company_info_wrap .text{
+    line-height: 1.8;
+    word-break: keep-all;
+    letter-spacing : -2px;
+}
+.company_info_wrap .cell-right{
+    width : 580px;
+}
+.company_info_wrap .cell-right .text{
+    width : 270px;
+}
+.company_info_wrap .cell > .text ~ a{
+    display: inline-block;
+    margin-top: 10px;
+    color: #000;
+    font-size: 14px;
+    font-weight : bold;
+}
+.company_info_wrap .cell > .text ~ a::after{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 15px;
+    margin: -3px 0 0 9px;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/ico.png) no-repeat -65px -55px;
+    vertical-align: middle;
+}
+.company_info_wrap .cell > .link +.link {
+    margin-left: 10px;
+}
+.company_info_wrap .link{
+    display: inline-block;
+    margin-top: 10px;
+    color: #000;
+    font-size: 14px;
+    letter-spacing : -2px;
+}
+.company_info_wrap .cell-right .cell{
+    width : 270px;
+}
+.company_info_wrap .link::after{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 15px;
+    margin: -3px 0 0 9px;
+    background: url(https://www.etudehouse.com/kr/ko/pc/ko/images/common/ico.png) no-repeat -65px -55px;
+    vertical-align: middle;
+}
+.company_info_wrap .cell-right > .text{
+    width : 270px;
+}
+.copy{
+    font-family: Arial;
+    font-size: 11px;
+    margin-top: 20px;
+    letter-spacing: 0;
+    font-weight: normal;
+    color: #666;
+    text-transform: uppercase;
+}
+.slider .carousel-1 > .owl-carousel .color1{
+    background-color : #fff2c6;
+}
+.slider .carousel-1 > .owl-carousel .color2{
+    background-color : #ffd3e4;
+}
+.slider .carousel-1 > .owl-carousel .color3{
+    background-color : #f6f6f6;
+}
+.slider .carousel-1 > .owl-carousel .color4{
+    background-color : #b9cbf3;
+}
+/* 고정형 레이아웃 용 */
+.con {
+    width:1200px;
+}
+
+.con-min-width {
+    min-width:1200px;
+}
+
+/* 반응형 레이아웃 용 */
+/* 아이폰5 가로길이가 320px 이다. */
+/*
+.con {
+max-width:1150px;
+}
+
+.con-min-width {
+min-width:320px;
+}
+
+html, body {
+overflow-x:hidden;
+}
+*/

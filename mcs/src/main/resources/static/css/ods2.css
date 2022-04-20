@@ -1,0 +1,248 @@
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      border: 0px solid red;
+  }
+
+  img {
+      width: 100px;
+  }
+
+  body {
+      font-family: 'Gothic A1', sans-serif;
+      font-size: 0.9rem;
+      line-height: 1rem;
+      letter-spacing: 0.1px;
+  }
+
+  h1 {
+      font-family: 'Mr De Haviland', cursive;
+      text-transform: uppercase;
+      color: #222;
+  }
+
+h2{
+    font-family: 'Mr De Haviland', cursive;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+ 
+
+  h1 {
+      font-size: 3rem;
+      line-height: 3rem;
+  }
+
+
+  a:link {
+      color: #888;
+      text-decoration: none;
+  }
+
+  a:visited {
+      color: #888;
+  }
+
+  a:hover {
+      color: #111;
+  }
+
+  a:active {
+      color: #111;
+  }
+
+
+  /* start */
+
+  main {
+      height: 880px;
+      margin-bottom: 90px;
+  }
+
+  header {
+      position: relative;
+      height: 100px;
+      margin-bottom: 25px;
+  }
+
+  header .rowoo {
+      padding: 30px 0 20px 0;
+      cursor: pointer;
+      font-weight: bold;
+      text-align: center;
+  }
+
+  main header .chan0 {
+      display: none;
+  }
+
+  section {
+      padding-top: 8px;
+      float: left;
+  }
+
+  #header {
+      display: none;
+  }
+
+  /* Labtop start */
+  /* 1366 */
+  @media screen and (min-width: 1366px) {
+
+      * {
+          border: 0px solid purple;
+      }
+
+      main {
+          height: 1050px;
+          margin-bottom: 150px;
+      }
+
+      main header > :nth-child(2),
+      main header > :nth-child(3) {
+          display: none;
+      }
+
+      header .rowoo {
+          padding: 60px 0 30px 0;
+          cursor: pointer;
+          font-weight: bold;
+          text-align: center;
+          font-size: 4rem;
+      }
+
+      main header {
+          background: linear-gradient(rgba(0, 0, 0, 0) 170px, rgba(255, 255, 255, 0.6));
+          height: 170px;
+          overflow: hidden;
+          z-index: 999;
+          position: relative;
+      }
+
+      main header .chan0 {
+          width: 750px;
+          margin: 0 auto;
+          display: block;
+      }
+
+      main header .chan0 ul {
+          display: flex;
+          list-style: none;
+
+      }
+
+      main header .chan0 > ul li {
+          text-align: center;
+          line-height: 2rem;
+          width: 150px;
+      }
+
+      main header .chan0 ul li span {
+          font-size: 1.2rem;
+          font-weight: bold;
+          padding: -20px;
+          text-decoration: none;
+          color: rgba(34, 34, 34, .5);
+          transition: color .35s ease;
+          position: relative;
+          padding-bottom: 3px;
+      }
+
+    
+      
+
+
+      main .chan2 {
+          width: 50%;
+          margin: 0 auto;
+          height: 600px;
+          padding-top: 115px;
+          overflow: hidden;
+          position: absolute;
+          top: 5%;
+          left: 50%;
+      }
+
+      main .chan1 > :nth-child(2) {
+          width: 440px;
+          position: absolute;
+          top: 35%;
+          left: 100%;
+          z-index: 10;
+      }
+      
+/* 노멀라이징 */
+*{
+  margin: 0 ;
+  padding:0  ;
+}
+ul , li {
+  list-style: none ;
+}
+a{
+  color: inherit ;
+  text-decoration: none ;
+}
+/* 라이브러리 */
+.cell{
+  float: left ;
+}
+.cell-r{
+  float: right ;
+}
+.row::after{
+  display: block ;
+  clear: both ;
+  content: "";
+} 
+.con{
+  width: 1200px  ;
+  margin: 0 auto;
+}
+/* 스타일 */  
+
+.products-list > .content{
+  width: calc( (100% - 30px) / 4 ) ;
+  height: 450px ;
+  background-color: black ;
+  padding: 20px ;
+  box-sizing: border-box ;
+  margin-right: 10px ;
+  margin-top: 10px ;
+}
+
+.products-list > .content:nth-child(4n) {
+    margin-right: 0 ;
+}
+
+
+.products-list > .content > .img-box > img{
+  width: 100% ;
+}
+
+.products-list > .content > .text-box{
+  color: white ;
+  text-align: center ;
+  margin-top: 10px ;
+}
+
+.footer{
+  width: 100% ;
+  height: 1500px ;
+ 
+}
+.button_pro{
+    text-align: center;
+    border: 1px solid gray;
+    width: 100px;
+    margin: 0px auto;
+    
+      }

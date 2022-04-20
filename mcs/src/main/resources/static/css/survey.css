@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'SDSamliphopangche_Outline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeeSeoyun';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    font-family: 'LeeSeoyun';
+
+}
+
+.container {
+    padding-bottom: 60px;
+}
+
+.page-header,
+small {
+    font-family: 'SDSamliphopangche_Outline';
+}
+
+.quiz-question {
+    font-family: 'SDSamliphopangche_Outline';
+    font-weight: bold;
+    font-size: 28px;
+    padding: 20px 0 5px;
+}
+
+.quiz-answer label {
+    font-family: 'LeeSeoyun';
+    font-size: 20px;
+    font-weight: normal;
+    display: block;
+    padding-left: 15px;
+}
+
+#result {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+}
+
+#next {
+    display: none;
+    font-size: 20px;
+    border: 3px solid #f199bc;
+    background-color: #f199bc;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* 결과창 */
+table.mbti-grid {
+    color: #eb4b29;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table.mbti-grid,
+table.mbti-grid td {
+    border: 3px #e76546 solid;
+}
+
+.mbti-cell {
+    padding: 15px 15px;
+    /*    width: 130px;*/
+    height: 137px;
+}
+
+.mbti-cell h6 {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.mbti-cell p {
+    font-size: 15px;
+    margin: 0;
+    /*    max-width: 100px;*/
+    height: 50px;
+    word-break: break-all;
+}
+
+.main:after {
+    clear: both;
+    display: block;
+    content: ''
+}
+
+.main .cont1 {
+    float: left;
+    width: 550px;
+    height: 550px;
+    /*	height: 254px;*/
+/*    background-color: orange;*/
+    margin-right: 20px;
+}
+
+.main .cont2 {
+    float: left;
+    /*    display: flex;*/
+    width: 550px;
+    height: 550px;
+    border: solid;
+    padding: 20px;
+}
+
+.cont2 .box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cont2 p {
+    font-family: 'SDSamliphopangche_Outline';
+    font-size: 50px;
+    border-bottom: 5px solid #e76546;
+}
+
+.cont2 span {
+    font-size: 18px;
+}
+
+#button {
+    font-size: 20px;
+    border: 3px solid #e76546;
+    background-color: #e76546;
+    color: #fff;
+    border-radius: 10px;
+}
+
+#button:hover {
+    color: orange;
+}
+
+.product div {
+    float: left;
+    text-align: center;
+    width: 25%;
+}
+
+.product p {
+    width: 90%;
+    font-size: 22px;
+    line-height: 22px;
+    height: 60px;
+    
+}
+
+img {
+    max-width: 100%;
+    max-height: 200px;
+}

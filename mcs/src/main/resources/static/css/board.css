@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0px solid red;
+    font-family: 'Noto Serif KR', serif;
+}
+
+.font1 {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    letter-spacing: 0.1px;
+    color: #707070;
+    background-color: #F5F5DC;
+    padding-top: 50px
+}
+
+img {
+    width: 100px;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    margin-top: 70px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+h5 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a:link {
+    color: #9a948b;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #9a948b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #707070;
+}
+
+a:active {
+    color: #707070;
+}
+
+/*---메인---*/
+
+
+#nav {
+    border: 2px solid #f4f4ed;
+    position: relative;
+    height: 250px;
+    width: 200px;
+    font-size: 20px;
+    line-height: 1;
+    margin-left: 120px;
+    background-color: #e9ecef;
+    top: -500px;
+}
+
+#nav li {
+    text-align: center;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+    overflow: hidden;
+
+}
+
+
+/*---article111---*/
+
+.container {
+    display: none;
+}
+
+
+.back1-1 {
+    position: absolute;
+    top: 86%;
+    left: 61%;
+    transform: translate(-50%, -50%);
+}
+
+.back1-1 > :first-child {
+    width: 260px;
+    height: 220px;
+    background: url('https://i.imgur.com/n92dtmz.png');
+    background-size: cover;
+    background-position: left top;
+}
+
+
+
+/*---address---*/
+.address {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+}
+
+.address p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.add {
+    padding: 60px 0;
+}
+
+.add > :nth-child(2) {
+    width: 320px;
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+.add input {
+    margin: 10px 0;
+}
+
+.add button {
+    margin-top: 10px;
+}
+
+
+
+#header {
+    display: none;
+}
+
+/* labtop start */
+@media screen and (min-width: 1000px) {
+
+    /*---헤더---*/
+    .header1 {
+        display: none;
+    }
+
+
+    #header {
+        width: 100%;
+        text-transform: uppercase;
+        cursor: pointer;
+        background-color: inherit;
+        height: 80px;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        display: block;
+        transition: top 0.4s;
+        z-index: 999;
+        left: 0px;
+    }
+
+    #header section {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    #header:hover {
+        background: rgba(255, 255, 255, 0.8);
+    }
+
+    .lap-nav > ul > li {
+        float: right;
+        width: 9rem;
+        height: 23rem;
+        line-height: 3rem;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .lap-nav > ul > li > a {
+
+        padding: 1.3rem 0;
+        line-height: 4.5rem;
+        font-size: 1.2rem;
+        transition: 0.6s;
+        border-bottom: 2px solid rgba(255, 255, 255, 0);
+        color: #000;
+    }
+
+    .lap-nav > ul > li ul {
+        width: 100%;
+        height: 100%;
+        background-color: inherit;
+    }
+
+    .clearfix img {
+        width: 10rem;
+    }
+
+    .clearfix > :nth-child(3) {
+        width: 12rem;
+        margin-top: 1.1rem;
+    }
+
+    .clearfix > li > ul > li {
+        display: block;
+        border: 1px solid rgba(255, 255, 255, 0);
+        color:#000;
+        transition: 0.6s;
+        font-size: 0.8rem;
+    }
+
+
+    .lap-nav > ul > li > ul > li:hover {
+        color: #9a948b;
+        background: #f4f4ed;
+        border: 1px solid #f4f4ed;
+
+
+    }
+
+
+    .login {
+        width: 200px;
+    }
+
+
+    .login a {
+        text-align: center;
+        line-height: 4.7rem;
+        padding: 0.3rem;
+        color: #000;
+    }
+
+    .login a:hover {
+        border-bottom: 2px solid #000;
+    }
+
+    .container {
+        display: block;
+        width: 1000px;
+        margin: 0px auto;
+        height: 600px;
+        background-color: white;
+
+    }
+
+
+    .container h2 {
+        text-align: center;
+        line-height: normal;
+        padding-top: 35px;
+
+    }
+
+    .Board {
+        text-align: center;
+    }
+
+    .pyo {
+        line-height: 2.5em;
+    }
+
+    ul,
+    li {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    #mainWrapper {
+        width: 80%;
+        margin: 0 auto;
+        /*가운데 정렬*/
+    }
+
+    #mainWrapper > ul > li:first-child {
+        text-align: center;
+        font-size: 14pt;
+        height: 40px;
+        vertical-align: middle;
+        line-height: 30px;
+    }
+
+    #boardTitle {
+        margin-top: 10px;
+    }
+
+
+    
+    
+    
+    
+    
+    
+    /*조회수 열 크기*/
+
+
+    
+    
+    
+    .left:hover {
+        cursor: pointer;
+    }
+
+    #page-box {
+        width: 80%;
+        margin: 5px auto;
+        height: 100px;
+        text-align: center;
+        position : relative;
+        }
+
+    .pagination-sm a.btn {
+        display: inline-block;
+        padding: 3px 5px;
+        font-size: 10px;
+        color: #333;
+        margin-top: 10px;
+    }
+
+    .pagination-sm a.btn.on {
+        background-color: #dbdbdb;
+    }
+
+    .write-button {
+        width: 100px;
+        height: 40px;
+        border: 3px solid;
+        border-radius: 25px;
+        float: right;
+        margin-right: 30px;
+        background-color: #fff;
+        margin-top: 10px;
+    }
+
+    .write-button:hover {
+        width: 100px;
+        height: 40px;
+        border: 3px solid;
+        border-radius: 25px;
+        float: right;
+        margin-right: 30px;
+        background-color: #000;
+        margin-top: 10px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+
+
+
+    #liSearchOption {
+        clear: both;
+ 
+    }
+
+    #liSearchOption > div {
+        margin: 0 auto;
+        margin-top: 30px;
+        width: auto;
+        height: 100px;
+		
+    }
+
+    .logtime {
+        text-align: left;
+    }
+
+
+
+    /*---하단 아티클---*/
+
+ footer {
+    
+    clear: both;
+    width: 100%;
+    background: #ededed;
+    padding: 2.5rem 0;
+}
+
+footer > div {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+footer ul li {
+    list-style: none;
+    line-height: 2.5rem;
+}
+
+footer h5 {
+    color: #666;
+}
+
+footer > div > :nth-child(1) > :first-child {
+    width: 200px;
+}
+
+footer > div ul li img {
+    width: 20px;
+    margin-right: 0.5rem;
+    -webkit-filter: invert(50%);
+    filter: invert(50%);
+    transform: translateY(20%);
+}
+
+footer > div ul li button {
+    padding: 5px;
+    margin-right: 0.8rem;
+    border: 0.5px solid #999;
+}
+
+.icon img {
+    width: 28px;
+    margin-top: 1.8rem;
+    margin-right: 1.5rem;
+}
+
+.icon img:hover {
+    width: 28px;
+    margin-top: 1.8rem;
+    margin-right: 1.5rem;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.foo2 {
+    width: 100%;
+    background: #ededed;
+    padding: 1rem 0;
+    border-top: 1px solid #777;
+}
+
+.foo2 > div {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.foo2 p {
+    margin-top: 0.3rem;
+}
+
+.icon2 > :nth-child(1) {
+    width: 70px;
+}
+
+.icon2 > :nth-child(2) {
+    width: 35px;
+    margin: 0 1rem;
+}
+
+.icon2 > :nth-child(3) {
+    width: 40px;
+}
+
+}
